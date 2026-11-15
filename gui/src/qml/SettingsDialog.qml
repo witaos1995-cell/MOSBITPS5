@@ -3129,15 +3129,15 @@ DialogView {
                     Layout.preferredWidth: 200
                     fillMode: Image.PreserveAspectFit
                     verticalAlignment: Image.AlignTop
-                    source: "qrc:icons/mosbit.png"
+                    source: "qrc:icons/sonexium.png"
                 }
 
                 Label {
                     Layout.preferredWidth: 400
                     verticalAlignment: Text.AlignTop
                     wrapMode: Text.Wrap
-                    text: "<h1>Mosbit</h1> Audio de tu PS5 en el PC, version %1
-                        <h2>Basado en chiaki-ng</h2> by Street Pea (AGPLv3). Codigo fuente de Mosbit: https://github.com/witaos1995-cell/mosbit-ps5
+                    text: "<h1>Sonexium</h1> Audio de tu PS5 en el PC, version %1
+                        <h2>Basado en chiaki-ng</h2> by Street Pea (AGPLv3). Codigo fuente: https://github.com/witaos1995-cell/mosbit-ps5
                         <h2>Fork of Chiaki</h2> by Florian Markl at version 2.1.1
 
                         <p>This program is free software: you can redistribute it and/or modify

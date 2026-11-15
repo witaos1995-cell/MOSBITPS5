@@ -12,9 +12,9 @@ Item {
     readonly property bool preferSeparateStreamSettingsWindows: Chiaki.window.runtimeRendererBackend === 1 && Chiaki.session
     property bool useSeparateStreamSettingsWindows: false
     Material.theme: Material.Dark
-    Material.accent: "#D4142A"
-    Material.primary: "#1A0709"
-    Material.background: "#B30E0708"
+    Material.accent: "#1E88FF"
+    Material.primary: "#06101F"
+    Material.background: "#B305070C"
 
     function controllerButton(name) {
         let type = "deck";
@@ -257,12 +257,12 @@ Item {
     }
 
     Rectangle {
-        // Mosbit: fondo negro con las cartas, visible detras de todas las pantallas
+        // Sonexium: fondo negro/azul con las cartas, visible detras de todas las pantallas
         anchors.fill: parent
-        color: "#080404"
+        color: "#04060B"
         Image {
             anchors.fill: parent
-            source: "qrc:/icons/mosbit_banner.jpg"
+            source: "qrc:/icons/sonexium_banner.jpg"
             fillMode: Image.PreserveAspectCrop
             opacity: 0.35
             asynchronous: true

@@ -21,14 +21,14 @@ BEGIN
     BEGIN
         BLOCK "080904b0"
         BEGIN
-            VALUE "Comments", "Mosbit - audio de PS5 en tu PC. Basado en chiaki-ng (AGPLv3)"
+            VALUE "Comments", "Sonexium - audio de PS5 en tu PC. Basado en chiaki-ng (AGPLv3)"
             VALUE "CompanyName", "ABAT GROUP"
-            VALUE "FileDescription", "Mosbit"
+            VALUE "FileDescription", "Sonexium"
             VALUE "FileVersion", VER_FILEVERSION_STR
-            VALUE "InternalName", "Mosbit"
-            VALUE "LegalCopyright", "AGPLv3. chiaki-ng (c) Street Pea y colaboradores; Mosbit 2026"
-            VALUE "OriginalFilename", "Mosbit.exe"
-            VALUE "ProductName", "Mosbit"
+            VALUE "InternalName", "Sonexium"
+            VALUE "LegalCopyright", "AGPLv3. chiaki-ng (c) Street Pea y colaboradores; Sonexium 2026"
+            VALUE "OriginalFilename", "Sonexium.exe"
+            VALUE "ProductName", "Sonexium"
             VALUE "ProductVersion", VER_PRODUCTVERSION_STR
         END
     END
@@ -37,4 +37,4 @@ BEGIN
         VALUE "Translation", 0x809, 1200
     END
 END
-IDI_ICON1 ICON DISCARDABLE "mosbit.ico"
+IDI_ICON1 ICON DISCARDABLE "sonexium.ico"

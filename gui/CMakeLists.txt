@@ -94,7 +94,7 @@ add_executable(chiaki WIN32
 )
 target_include_directories(chiaki PRIVATE include)
 if(WIN32)
-	set_target_properties(chiaki PROPERTIES OUTPUT_NAME Mosbit)
+	set_target_properties(chiaki PROPERTIES OUTPUT_NAME Sonexium)
 endif()
 
 add_library(placebo-libav-impl src/libav_impl.c)

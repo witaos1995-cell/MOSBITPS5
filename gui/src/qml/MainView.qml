@@ -427,7 +427,7 @@ Pane {
     Image {
         id: logoImage
         anchors.centerIn: parent
-        source: "qrc:/icons/mosbit_banner.jpg"
+        source: "qrc:/icons/sonexium_banner.jpg"
         fillMode: Image.PreserveAspectFit
         width: Math.min(parent.width * 0.7, 860)
         height: width * 573 / 860

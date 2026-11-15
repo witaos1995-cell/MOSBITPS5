@@ -1,16 +1,16 @@
-name: Compilar Mosbit para Windows
+name: Compilar Sonexium para Windows
 
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ sonexium ]
 
 permissions:
   contents: read
 
 jobs:
-  build-mosbit:
-    name: Compilar Mosbit (Windows x64)
+  build-sonexium:
+    name: Compilar Sonexium (Windows x64)
     runs-on: windows-latest
     env:
       sdl2_compat_tag: 2.32.74
@@ -99,27 +99,27 @@ jobs:
           
       - name: Deploy chiaki-ng
         run: |
-          ./scripts/deploy-windows-msys2.sh Mosbit-Win build/gui/Mosbit.exe "${{ github.workspace }}/build/third-party/cpp-steam-tools" /mingw64 gui/src/qml
+          ./scripts/deploy-windows-msys2.sh Sonexium-Win build/gui/Sonexium.exe "${{ github.workspace }}/build/third-party/cpp-steam-tools" /mingw64 gui/src/qml
 
 
-      - name: Subir Mosbit portable
+      - name: Subir Sonexium portable
         uses: actions/upload-artifact@v7
         with:
-          name: Mosbit-Portable
-          path: Mosbit-Win
+          name: Sonexium-Portable
+          path: Sonexium-Win
           if-no-files-found: error
           retention-days: 30
 
       - name: Crear instalador
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.9
         with:
-          path: "scripts/mosbit.iss"
+          path: "scripts/sonexium.iss"
           options: /O+
 
       - name: Subir instalador
         uses: actions/upload-artifact@v7
         with:
-          name: Mosbit-Instalador
-          path: Mosbit-Instalador.exe
+          name: Sonexium-Instalador
+          path: Sonexium-Instalador.exe
           if-no-files-found: error
           retention-days: 30
