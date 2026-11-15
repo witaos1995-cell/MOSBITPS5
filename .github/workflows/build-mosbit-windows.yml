@@ -106,7 +106,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: Mosbit-Portable
-          path: ${{ env.RELEASE_PACKAGE_PATH }}
+          path: Mosbit-Win
           if-no-files-found: error
           retention-days: 30
 
