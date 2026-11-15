@@ -77,6 +77,12 @@ Pane {
         }
         height: 80
 
+        Rectangle {
+            anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+            height: 3
+            color: "#D4A548"
+        }
+
         RowLayout {
             anchors {
                 fill: parent

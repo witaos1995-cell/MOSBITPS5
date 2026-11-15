@@ -13,6 +13,8 @@ Item {
     property bool useSeparateStreamSettingsWindows: false
     Material.theme: Material.Dark
     Material.accent: "#D4142A"
+    Material.primary: "#1A0709"
+    Material.background: "#B30E0708"
 
     function controllerButton(name) {
         let type = "deck";
@@ -252,6 +254,19 @@ Item {
     Pane {
         anchors.fill: parent
         visible: !Chiaki.window.hasVideo && !Chiaki.window.keepVideo
+    }
+
+    Rectangle {
+        // Mosbit: fondo negro con las cartas, visible detras de todas las pantallas
+        anchors.fill: parent
+        color: "#080404"
+        Image {
+            anchors.fill: parent
+            source: "qrc:/icons/mosbit_banner.jpg"
+            fillMode: Image.PreserveAspectCrop
+            opacity: 0.35
+            asynchronous: true
+        }
     }
 
     StackView {
