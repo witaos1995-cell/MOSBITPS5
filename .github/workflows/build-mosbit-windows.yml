@@ -111,7 +111,7 @@ jobs:
           retention-days: 30
 
       - name: Crear instalador
-        uses: Minionguyjpro/Inno-Setup-Action@v1.2.9
+        uses: Minionguyjpro/Inno-Setup-Action@v1.3.0
         with:
           path: "scripts/mosbit.iss"
           options: /O+
